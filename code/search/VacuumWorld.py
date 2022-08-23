@@ -62,7 +62,7 @@ def main():
     #
     # Executando busca em largura
     #
-    state = VacuumWorld('left', False, False, '')
+    state = VacuumWorld('right', True, False, '')
     algorithm = BuscaLargura()
     result = algorithm.search(state)
     if result != None:
@@ -74,7 +74,7 @@ def main():
     #
     # Executando busca em profundidade
     #
-    state = VacuumWorld('left', False, False, '')
+    state = VacuumWorld('right', True, False, '')
     algorithm = BuscaProfundidade()
     result = algorithm.search(state, 10)
     if result != None:
